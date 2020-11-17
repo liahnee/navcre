@@ -1,0 +1,14 @@
+.footer {
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+#frec {
+    max-height: 20vh;
+}
+
+#srvs-logo {
+    max-height: 15vh;
+}

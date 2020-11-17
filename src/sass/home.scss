@@ -1,0 +1,129 @@
+$darkgrey-color: rgb(41, 41, 41);
+
+.home-main {
+    position: relative;
+    height: 110vh;
+    display: flex;
+    align-items: top;
+    background-image: url('../assets/home/main_bg2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+.home-main > .strip{
+    margin-top: 35vh;
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    background-color:rgba(0, 0, 0, 0.753);
+    padding: 5rem 5rem 5rem 15vw;
+    color: white;
+}
+
+#crelogo {
+    padding-top: 2rem;
+}
+
+.strip-box{
+    position: absolute;
+    height: 9em;
+    right: 8vw;
+    bottom: -5rem;
+    width: 25rem;
+    background-color: rgba(73, 73, 73, 0.904);
+    text-align: center;;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.strip > p {
+    font-size: 2em;
+    color: rgb(206, 206, 206);
+}
+
+.strip-box > p {
+    font-family: 'Play', sans-serif;
+    font-size: 1.8em;
+    margin-left: 2em;
+    margin-bottom: 0;
+}
+
+.strip-box > p:nth-child(2) {
+    font-style: italic;
+}
+
+//first section
+
+#cre-intro {
+    position: relative;
+    // margin-top: -20vh;
+    padding-top: 5vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// four image blocks section
+.builtfor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10vh;
+    padding-top: 3em;
+}
+
+.builtfor-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+
+.builtfor-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: $darkgrey-color;
+}
+
+#builtfor-logo {
+    max-width: 4em;
+    margin: 1em;
+}
+
+#builtfor-p {
+    font-size: 2rem;
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+    font-family: 'Sarala', sans-serif;;
+}
+
+// demo form 
+
+
+
+#home-demo {
+    position: relative;
+    background-image: url('../assets/home/main_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+#home-demo:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(39, 39, 39, 0.8);
+    z-index: 3;
+}

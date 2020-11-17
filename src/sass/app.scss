@@ -1,0 +1,46 @@
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover, label:hover {
+    cursor: default;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+a:hover {
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.app {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-areas: 
+    "c n"
+    "f n";
+}
+
+.routes {
+    grid-area: c;
+}
+
+.side-nav {
+    grid-area: n;
+}
+.footer {
+    grid-area: f;
+}
+
+.content {
+    max-width: 80vw;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider-tiny {
+    width: 3rem; 
+    height: 1rem;
+    border-top: solid 1px;
+}

@@ -1,0 +1,112 @@
+.side-nav {
+    position: fixed;
+    top: 0;
+    right: 0vw;
+    height: 100vh;
+    min-width:100px;
+    max-width: 10vw;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    transition: width 0.5s ease-in-out, min-width 0.5s ease-in-out;
+    font-size: 1.2em;
+}
+
+// lengthen nav width on entere
+
+.side-nav.long {
+    min-width: 250px;
+}
+
+.side-nav.short {
+    min-width: 100px;
+}
+
+// logo 
+
+.nav-logo-container {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo {
+    width: 100%;
+    max-width: 50px;
+}
+
+.menu {
+    width: 100%;
+}
+
+// menu items
+
+.menu-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    transition: color 0.5s ease-in-out, min-width 0.5s ease;
+}
+
+.menu-icon {
+    position: absolute;
+    top: auto;
+    left: 37px;
+}
+
+.menu-item-text {
+    // margin-left: 100px;
+    overflow: hidden;
+    overflow-wrap: normal;
+    min-width: 0px;
+    color: transparent;
+    margin-right: -100px;
+    transition: margin 0.5s ease-in-out, display 2 ease-in-out;
+}
+
+
+.menu-item.long:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    .menu-item-text {
+        color: black;
+
+    }
+    span:hover {
+        cursor: pointer;
+    }
+}
+
+.menu-item-text.short {
+    display: none;
+    min-width: 0px;
+    color: transparent;
+}
+
+.menu-item.long {
+    align-items: center;
+    padding: 0 30px 0 30px;
+
+    .menu-item-text {
+        position: absolute;
+        left: 0;
+        display: inline;
+        margin-right: 0;
+        margin-left: 100px;
+        color: white;
+        min-width: auto;
+    }
+}
+// text transition

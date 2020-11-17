@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACL,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK",
+"sources": ["../../sass/components/chatbox.scss"],
+"names": [],
+"file": "chatbox.css"
+}

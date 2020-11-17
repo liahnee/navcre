@@ -1,0 +1,84 @@
+$red-color: rgb(231, 20, 20);
+$darkgrey-color: rgb(41, 41, 41); 
+$white-color: rgb(230, 220, 220);
+
+.home-block {
+    position: relative;
+    max-height: 40vh;
+    max-width: 40vw;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block-container {
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+.block-image {
+    z-index: 1;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.block-image.blur {
+    filter: blur(2px);
+}
+
+.block-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 5;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.block-overlay.hidden {
+    color: transparent;
+    background-color: transparent;
+
+}
+
+.nav-red, .block-text {
+    transition: color 0.5s ease;
+}
+
+.block-overlay.visible {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    // box-shadow: inset 0 0 5rem #0000006e;
+    
+    .nav-red {
+        color: $red-color;
+    }
+    .block-text {
+
+        color: $white-color;
+    }
+}
+
+//text content
+
+.block-overlay > label {
+    font-size: 1.4rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.block-text {
+    position: relative;
+    max-width: 100%;
+    white-space: pre-line;
+}

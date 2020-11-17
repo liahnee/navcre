@@ -1,0 +1,14 @@
+.profile {
+  display: flex;
+  min-height: 30rem; }
+  .profile div:first-child {
+    min-width: 20rem; }
+  .profile h3 {
+    color: #7880ee;
+    padding-bottom: 1.2rem; }
+
+.profile-title {
+  color: #7880ee;
+  font-size: 1.4em; }
+
+/*# sourceMappingURL=profile.css.map */

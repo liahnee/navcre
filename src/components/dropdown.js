@@ -5,8 +5,8 @@ export default function Text(props) {
 
 	return (
 		<div className="form-group col">
-            <label for={name} className="demoform-label">{!!required?<span className="red">*</span>:null}{label}</label>
-			<select class="form-control">
+            <label htmlFor={name} className="demoform-label">{!!required?<span className="red">*</span>:null}{label}</label>
+			<select className="form-control">
 				{options.map((opt, idx) => {
 					return <option key={idx}>{opt}</option>;
 				})}

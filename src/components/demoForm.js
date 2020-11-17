@@ -8,6 +8,8 @@ import Dropdown from './dropdown';
 const DemoForm = (props) => {
 	return (
 		<div className="demoform content">
+			<h2>Sign Up for A Demo!</h2>
+			<p>Learn About ​Return on Speed (TM)</p>
 			<div className="form-logo">
 				<img src={Logo} alt="logo" />
 			</div>

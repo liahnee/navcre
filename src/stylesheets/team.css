@@ -1,0 +1,62 @@
+.team {
+  background-color: #272727;
+  color: white;
+  font-size: 1.2em; }
+
+.team-intro {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+.team-exect {
+  background-color: #131313;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  position: relative;
+  z-index: 5; }
+
+.team-title {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  color: #505ae7;
+  padding-bottom: 2em; }
+  .team-titleh2 {
+    font-size: 2.6em; }
+
+.team-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center; }
+
+.img-wrap {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  max-width: 15vw;
+  max-height: 15vw;
+  box-shadow: 2px 2px 5px 2px #374274; }
+  .img-wrap img {
+    width: 100%; }
+
+.img-wrap:hover {
+  cursor: pointer; }
+
+.stars-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(18, 18, 19, 0.856); }
+
+/*# sourceMappingURL=team.css.map */

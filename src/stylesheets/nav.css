@@ -85,4 +85,8 @@
     color: white;
     min-width: auto; }
 
+@media (max-width: 800px) {
+  .side-nav {
+    display: none; } }
+
 /*# sourceMappingURL=nav.css.map */

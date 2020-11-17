@@ -7,21 +7,21 @@
   color: white; }
 
 #bannerB {
-  background-color: grey; }
+  background-color: #536b80; }
 
 #bannerA {
-  background-color: black; }
+  background-color: #0a0a0a; }
 
 .bannerB {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 28vw; }
+  grid-template-columns: 1fr 28%; }
 
 .bannerA {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 28vw 1fr;
-  background-color: black; }
+  grid-template-columns: 28% 1fr;
+  background-color: #0a0a0a; }
 
 .bannerAB-wrap {
   display: flex;
@@ -29,26 +29,26 @@
   row-gap: 1.5em; }
 
 .bannerA-wrap {
-  background-color: black; }
+  background-color: #0a0a0a; }
 
 .bannerB-wrap {
-  background-color: grey; }
+  background-color: #536b80; }
 
 .bannerAB-top {
   margin-top: -15vh;
   min-height: 10vh;
   width: 100%;
-  background: linear-gradient(177deg, transparent, transparent 49%, black 50%, black); }
+  background: linear-gradient(177deg, transparent, transparent 49%, #0a0a0a 50%, #0a0a0a); }
 
 .bannerAB-divider {
   min-height: 15vh;
   width: 100%;
-  background: linear-gradient(5deg, grey, grey 49%, black 50%, black); }
+  background: linear-gradient(5deg, #536b80, #536b80 49%, #0a0a0a 50%, #0a0a0a); }
 
 .bannerAB-bottom {
   min-height: 10vh;
   width: 100%;
-  background: linear-gradient(177deg, grey, grey 49%, transparent 50%, transparent); }
+  background: linear-gradient(177deg, #536b80, #536b80 49%, transparent 50%, transparent); }
 
 .bannerAB-img-wrap {
   position: relative;

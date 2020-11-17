@@ -41,14 +41,14 @@
   color: transparent;
   background-color: transparent; }
 
-.nav-red, .block-text {
+.block-red, .block-text {
   transition: color 0.5s ease; }
 
 .block-overlay.visible {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   font-weight: bold; }
-  .block-overlay.visible .nav-red {
+  .block-overlay.visible .block-red {
     color: #e71414; }
   .block-overlay.visible .block-text {
     color: #e6dcdc; }
@@ -62,4 +62,4 @@
   max-width: 100%;
   white-space: pre-line; }
 
-/*# sourceMappingURL=block.css.map */
+/*# sourceMappingURL=home-picture-block.css.map */

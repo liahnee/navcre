@@ -1,0 +1,60 @@
+
+
+$grey-color: rgb(39, 39, 39);
+
+.contact {
+    background-color: $grey-color;
+    color:white;
+
+    & .h2-s {
+        font-size: 1.4em;
+        color: rgb(190, 47, 47);
+    }
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
+
+}
+
+.contact-top, .contact-bottom  {
+    display: flex;
+}
+
+.contact-top {
+
+    padding-top: 5vh;
+}
+.contact-bottom {
+
+    padding-bottom: 5vh;
+}
+
+#t-1 {
+  width: 70%; 
+  padding-right: 10% 
+}
+
+#map {
+    width: 70%;
+    padding-right: 10%;
+}
+.addresses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-demo {
+    background-color: grey;
+    position: relative;
+    
+    .stars-wrap::after {
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(11, 24, 15, 0.815);
+    }
+}

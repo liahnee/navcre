@@ -1,3 +1,5 @@
+
+
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover, label:hover {
     cursor: default;
 }
@@ -10,6 +12,9 @@ a:hover {
     color:white;
     text-decoration: none;
     cursor: pointer;
+}
+.red, .nav-red {
+    color: rgb(182, 0, 0);
 }
 
 .app {
@@ -33,10 +38,12 @@ a:hover {
 }
 
 .content {
+    position: relative;
     max-width: 80vw;
     min-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    z-index:5;
 }
 
 .divider-tiny {

@@ -1,3 +1,37 @@
+.header {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.1em;
+  background-image: url("../../assets/header_bg_1.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .header h1 {
+    font-size: 8vh;
+    position: relative;
+    z-index: 3; }
+  .header.platform.header:after {
+    background-color: rgba(0, 55, 59, 0.377); }
+  .header.profeatures.header:after {
+    background-color: rgba(27, 0, 59, 0.377); }
+  .header.team.header:after {
+    background-color: rgba(0, 19, 59, 0.377); }
+  .header.contact.header:after {
+    background-color: rgba(42, 97, 26, 0.356); }
 
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: grayscale(80%);
+  z-index: 1; }
 
 /*# sourceMappingURL=header.css.map */

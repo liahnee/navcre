@@ -1,4 +1,10 @@
 $darkgrey-color: rgb(41, 41, 41);
+$grey-color: rgb(39, 39, 39);
+
+// .home {
+//     background-color: $grey-color;
+//     color: white;
+// }
 
 .home-main {
     position: relative;
@@ -8,7 +14,7 @@ $darkgrey-color: rgb(41, 41, 41);
     background-image: url('../assets/home/main_bg2.jpg');
     background-position: center;
     background-attachment: fixed;
-
+    background-size: cover;
 }
 
 
@@ -38,7 +44,7 @@ $darkgrey-color: rgb(41, 41, 41);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 .strip > p {
     font-size: 2em;
@@ -89,7 +95,6 @@ $darkgrey-color: rgb(41, 41, 41);
 .builtfor-title {
     font-size: 2.8em;
     font-weight: bold;
-    color: $darkgrey-color;
 }
 
 #builtfor-logo {
@@ -114,6 +119,7 @@ $darkgrey-color: rgb(41, 41, 41);
     background-image: url('../assets/home/main_bg.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     z-index: 1;
 }
 

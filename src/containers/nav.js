@@ -86,13 +86,13 @@ const menu = [
 	},
 	{
 		icon: 'fas fa-project-diagram',
-		text: 'Pro Features',
-		link: 'profeatures'
+		text: 'Platform',
+		link: 'platform'
 	},
 	{
-		icon: 'fas fa-user-lock',
-		text: 'Security',
-		link: 'security'
+		icon: 'fas fa-tasks',
+		text: 'Pro Features',
+		link: 'profeatures'
 	},
 	{
 		icon: 'fas fa-users',

@@ -4,7 +4,7 @@ import '../stylesheets/home.css';
 import BannerA from '../components/bannerA';
 import BannerB from '../components/bannerB';
 import Demo from '../components/demoForm';
-import Block from '../components/home/block';
+import Block from '../components/home/picture-block';
 
 import CRELogo from '../assets/logos/crelogo.png';
 import CRELogoS from '../assets/logos/navilogosub.png';
@@ -98,7 +98,7 @@ const blocks = [
 		img: Buildings,
 		title: (
 			<p className="block-title">
-				Owner Operators/ <span className="nav-red">Landlords</span>
+				Owner Operators/ <span className="block-red">Landlords</span>
 			</p>
 		),
 		text:
@@ -108,7 +108,7 @@ const blocks = [
 		img: Brokers,
 		title: (
 			<p className="block-title">
-				Brokerage/ <span className="nav-red">Capital Markets</span>
+				Brokerage/ <span className="block-red">Capital Markets</span>
 			</p>
 		),
 		text:
@@ -118,7 +118,7 @@ const blocks = [
 		img: Tenant,
 		title: (
 			<p className="block-title">
-				Occupiers/ <span className="nav-red">Tenants</span>
+				Occupiers/ <span className="block-red">Tenants</span>
 			</p>
 		),
 		text:
@@ -128,7 +128,7 @@ const blocks = [
 		img: Construction,
 		title: (
 			<p className="block-title">
-				Construction/ <span className="nav-red">Development</span>
+				Construction/ <span className="block-red">Development</span>
 			</p>
 		),
 		text: 'Consolidate your project status, costs, budgets, forecasting, return on cost and market conditions.'

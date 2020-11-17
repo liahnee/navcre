@@ -1,0 +1,67 @@
+.content {
+  padding-top: 2rem; }
+
+.platform {
+  background-color: #272727; }
+  .platform .column-2 {
+    display: grid;
+    grid-template-columns: 50vw 1fr;
+    gap: 2rem;
+    align-items: center; }
+
+#platform-desc {
+  background-color: #272727;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white; }
+  #platform-desc h2 {
+    font-size: 2.4em;
+    line-height: 1.4em;
+    padding-bottom: 1.6em; }
+  #platform-desc p {
+    font-size: 1.2em; }
+
+.products-img {
+  max-width: 25vw;
+  max-height: 15rem;
+  padding: 0rem; }
+
+.products-img2 {
+  padding: 2rem;
+  padding-bottom: 4rem; }
+
+.nav-arch-img {
+  min-width: calc(100vw - 100px); }
+
+#platform-products-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #272727; }
+
+.products-label {
+  width: 100%;
+  font-size: 2em;
+  padding: 0.5em;
+  text-align: center;
+  font-family: 'Palanquin Dark', sans-serif;
+  color: #08b49d; }
+
+@media (max-width: 800px) {
+  .column-2 {
+    display: flex;
+    flex-direction: column; } }
+
+/*# sourceMappingURL=platform.css.map */

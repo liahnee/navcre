@@ -27,11 +27,15 @@ input.form-control:focus {
 
 .demoform {
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
     z-index: 5;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.80);
+    padding-top: 5em;
+    padding-bottom: 8em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .demoform > .description { //aligning with inputs
@@ -41,11 +45,7 @@ input.form-control:focus {
     z-index: 5;
     font-size: 0.9em;
     font-style: italic;
-}
 
-.red {
-    color: red;
-    margin: 0;
 }
 
 .form-logo {
@@ -73,3 +73,20 @@ input.form-control:focus {
     color: white;
     border-color: white;
 }
+
+.demoform > p:nth-child(2) {
+    font-size:1.25em;
+    font-style: italic;
+}
+
+.form-container {
+    width: 100%;
+}
+
+
+@media (min-width: 1400px) {
+    .demoform {
+         min-width: 1200px;
+         max-width: 1200px;
+     }
+ }

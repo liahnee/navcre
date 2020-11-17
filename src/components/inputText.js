@@ -5,8 +5,16 @@ export default function Text(props) {
 
 	return (
 		<div className="form-group col">
-			<label className="demoform-label" for={name}>{!!required?<span className="red">*</span>:null}{label} </label>
-			<input className="demoform-input form-control" id={name} type="text" placeholder={!!placeholder?placeholder:null}/>
+			<label className="demoform-label" htmlFor={name}>
+				{!!required ? <span className="red">*</span> : null}
+				{label}
+			</label>
+			<input
+				className="demoform-input form-control"
+				id={name}
+				type="text"
+				placeholder={!!placeholder ? placeholder : null}
+			/>
 		</div>
 	);
 }

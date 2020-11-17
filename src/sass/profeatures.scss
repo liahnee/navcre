@@ -1,0 +1,9 @@
+$grey-color: rgb(34, 34, 34);
+
+
+.block-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $grey-color;
+    color: white;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../stylesheets/components/block.css';
+import '../../stylesheets/components/home-picture-block.css';
 
 const Block = (props) => {
 	const [ vis, setVis ] = useState(false);

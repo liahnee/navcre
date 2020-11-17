@@ -1,0 +1,18 @@
+$team-color: rgb(120, 128, 238);
+
+.profile {
+    display: flex;
+    min-height: 30rem;
+    & div:first-child {
+        min-width: 20rem;
+    }
+    & h3 {
+        color: $team-color;
+        padding-bottom: 1.2rem;
+    }
+}
+
+.profile-title {
+    color: $team-color;
+    font-size: 1.4em;
+}

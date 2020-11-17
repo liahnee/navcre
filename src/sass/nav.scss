@@ -109,4 +109,10 @@
         min-width: auto;
     }
 }
-// text transition
+//mobile
+@media(max-width: 800px) {
+
+    .side-nav{
+        display: none;
+    }
+}

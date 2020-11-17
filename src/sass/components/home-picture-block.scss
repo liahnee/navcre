@@ -50,7 +50,7 @@ $white-color: rgb(230, 220, 220);
 
 }
 
-.nav-red, .block-text {
+.block-red, .block-text {
     transition: color 0.5s ease;
 }
 
@@ -58,9 +58,8 @@ $white-color: rgb(230, 220, 220);
     color: white;
     background-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
-    // box-shadow: inset 0 0 5rem #0000006e;
     
-    .nav-red {
+    .block-red {
         color: $red-color;
     }
     .block-text {

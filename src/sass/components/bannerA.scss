@@ -1,5 +1,5 @@
-$banner-top: black;
-$banner-bottom: grey;
+$banner-top: rgb(10, 10, 10);
+$banner-bottom: rgb(83, 107, 128);
 
 .bannerAB {
     position: relative;
@@ -22,12 +22,12 @@ $banner-bottom: grey;
 .bannerB {
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 28vw;
+    grid-template-columns: 1fr 28%;
 }
 .bannerA {
     display: grid;
     gap: 2rem;
-    grid-template-columns: 28vw 1fr;
+    grid-template-columns: 28% 1fr;
     background-color: $banner-top;
     // background: linear-gradient(175deg, grey, grey 9%, transparent 9.2%, transparent);
 }

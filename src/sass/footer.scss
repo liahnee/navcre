@@ -1,14 +1,54 @@
+
+
 .footer {
     height: 30vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: minmax(150px, 15%) 1fr minmax(200px, 40%);
     padding: 5vh 10vw 5vh 10vw;
+    background-color: rgb(255, 255, 255);
+    & ul {
+        list-style: none;
+        padding: 0;
+    }
 }
 
 #frec {
+    max-width: 100%;
     max-height: 20vh;
 }
 
 #srvs-logo {
+    max-width: 100%;
     max-height: 15vh;
+}
+
+.links {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    & p {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    & li {
+        line-height: 1.8em;
+    }
+}
+
+.sns {
+    font-size: 1.2em;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    text-align: end;
+    height: 2rem;    
+}
+.font-s {
+    font-size: 0.8em;
+}
+
+.f-3 {
+    text-align: end;
 }

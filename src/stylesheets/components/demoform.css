@@ -71,5 +71,9 @@ input.form-control:focus {
   .demoform {
     min-width: 1200px;
     max-width: 1200px; } }
+@media (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: column; } }
 
 /*# sourceMappingURL=demoform.css.map */

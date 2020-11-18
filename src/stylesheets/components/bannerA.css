@@ -82,4 +82,25 @@
   max-width: 100%;
   padding: 1.2em; }
 
+@media (max-width: 800px) {
+  .bannerA, .bannerB {
+    display: flex;
+    flex-direction: column; }
+
+  .bannerAB {
+    padding-bottom: 2em; }
+
+  .bannerA-text-wrap, .bannerB-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+
+  .bannerAB-icon {
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .banner-AB-text {
+    min-height: 10rem; } }
+
 /*# sourceMappingURL=bannerA.css.map */

@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux'
 import '../stylesheets/platform.css';
 
 import Header from '../components/header';
@@ -8,14 +9,14 @@ import ImgMobile from '../assets/platform/darkmodernredm.png';
 import ImgNav from '../assets/platform/nav-architecture_e.png';
 
 const Project = (props) => {
+	const { isMobile } = props;
 	return (
 		<div className="platform">
 			<Header title="THE PLATFORM" parent={'platform'} />
 			<div className="content column-2">
 				<div id="platform-desc">
 					<h2>
-						Patented Cloud Based SaaS Platform <br />Designed from the ground up for <br />{' '}
-						<span>Commercial Real Estate</span>
+						Patented Cloud Based SaaS Platform {isMobile? "": <br />}Designed from the ground up for {isMobile? "": <br />}<span>Commercial Real Estate</span>
 					</h2>
 					<p>
 						The NavigatorCRE Platform was built to dissolve the complexity around data and programs for the
@@ -53,7 +54,7 @@ const Project = (props) => {
 			</div>
 			<div id="platform-products-2" className="content products">
 				<p className="products-label">
-					US Patent for Structure &lt; Unstructured Data Visualization for Commercial Real Estate
+					US Patent for Structure {"&"} Unstructured Data Visualization for Commercial Real Estate
 				</p>
 				<div className="products-img-wrap">
 					<img id="nav-arch-img" className="products-img2" src={ImgNav} alt="Navigator CRE architecture" />
@@ -63,4 +64,8 @@ const Project = (props) => {
 	);
 };
 
-export default Project;
+const sToP = state => ({
+	isMobile : state.manageMobileNav.isMobile
+})
+
+export default connect(sToP)(Project);

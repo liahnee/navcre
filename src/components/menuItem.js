@@ -2,17 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MenuItem = (props) => {
+	const { link, icon, open, text } = props;
 	const showText = (entered) => {
 		return entered ? 'long' : 'short';
 	};
 
 	return (
-		<Link to={props.link}>
-			<div className={`menu-item ${showText(props.entered)}`}>
+		<Link to={link}>
+			<div className={`menu-item ${showText(open)}`}>
 				<div className="menu-icon">
-					<i className={props.icon} />
+					<i className={icon} />
 				</div>
-				<span className={`menu-item-text ${showText(props.entered)}`}>{props.text}</span>
+				<span className={`menu-item-text ${showText(open)}`}>{text}</span>
 			</div>
 		</Link>
 	);

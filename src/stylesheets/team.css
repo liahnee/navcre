@@ -50,6 +50,9 @@
 .img-wrap:hover {
   cursor: pointer; }
 
+.highlight {
+  border: solid 2px white; }
+
 .stars-wrap::after {
   content: "";
   position: absolute;
@@ -58,5 +61,31 @@
   height: 100%;
   width: 100%;
   background-color: rgba(18, 18, 19, 0.856); }
+
+@media (max-width: 800px) {
+  .team-intro {
+    display: flex;
+    flex-direction: column; }
+
+  .team-title {
+    width: 100%; }
+
+  .team-title > img {
+    max-width: 40vw; }
+
+  .team-pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 18vw);
+    gap: 10px;
+    align-items: center;
+    justify-content: center; }
+
+  .img-wrap {
+    margin: 0;
+    height: 14vw; }
+
+  .profile {
+    display: flex;
+    flex-direction: column; } }
 
 /*# sourceMappingURL=team.css.map */

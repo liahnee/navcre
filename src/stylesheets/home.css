@@ -18,7 +18,8 @@
   color: white; }
 
 #crelogo {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  max-width: 100%; }
 
 .strip-box {
   position: absolute;
@@ -102,5 +103,13 @@
   width: 100%;
   background-color: rgba(39, 39, 39, 0.8);
   z-index: 3; }
+
+@media (max-width: 800px) {
+  .block-container {
+    display: flex;
+    flex-direction: column; }
+
+  .home-block {
+    width: 100%; } }
 
 /*# sourceMappingURL=home.css.map */

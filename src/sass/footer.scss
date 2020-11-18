@@ -1,9 +1,9 @@
 
 
 .footer {
-    height: 30vh;
+    height: fit-content;
     display: grid;
-    grid-template-columns: minmax(150px, 15%) 1fr minmax(200px, 40%);
+    grid-template-columns: minmax(150px, 15%) 1fr minmax(100px, 40%);
     padding: 5vh 10vw 5vh 10vw;
     background-color: rgb(255, 255, 255);
     & ul {
@@ -15,6 +15,7 @@
 #frec {
     max-width: 100%;
     max-height: 20vh;
+    padding: 1rem;
 }
 
 #srvs-logo {
@@ -23,7 +24,8 @@
 }
 
 .links {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -35,6 +37,11 @@
     & li {
         line-height: 1.8em;
     }
+}
+.link-col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 .sns {
@@ -51,4 +58,25 @@
 
 .f-3 {
     text-align: end;
+}
+
+@media(max-width: 800px) {
+    .footer, .links {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    #frec {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .f-3 {
+        text-align: left;
+    }
+    .sns {
+        justify-content: flex-start;
+    }
+    #srvs-logo {
+        max-height: none;
+    }
 }

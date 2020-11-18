@@ -1,4 +1,4 @@
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover, label:hover {
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover, label:hover, ul, li {
   cursor: default; }
 
 a {
@@ -40,5 +40,11 @@ a:hover {
   width: 3rem;
   height: 1rem;
   border-top: solid 1px; }
+
+@media (max-width: 800px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=app.css.map */

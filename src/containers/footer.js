@@ -26,7 +26,7 @@ const Footer = (props) => {
 				<img id="srvs-logo" src={SRVSlogo} alt="logo of Navigator SRVS" />
                 <div className="sns">
                     {sns.map((i, idx) => {
-                        return <i class={i.icon}></i>;
+                        return <i key={idx} className={i.icon}></i>;
                     })}
                 </div>
 				<p className="font-s">

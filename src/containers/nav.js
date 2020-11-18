@@ -1,80 +1,46 @@
 import React, { useState } from 'react';
 import '../stylesheets/nav.css';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import CRELogoS from '../assets/logos/navilogosub.png';
 import MenuItem from '../components/menuItem';
 
 const Nav = (props) => {
-	const [ entered, setEntered ] = useState(false);
-
-	const width = (entered) => {
-		return entered ? 'long' : 'short';
+	const { isMobile, isOpen, open, close } = props;
+	const width = (isOpen, isMobile) => {
+		if (isMobile) {
+			return isOpen ? 'long' : 'closed';
+		} else {
+			return isOpen ? 'long' : 'short';
+		}
 	};
 
-	const onMouseEnter = () => {
-		setEntered(true);
-		return;
-	};
-
-	const onMouseLeave = () => {
-		setEntered(false);
+	const overlay = (isMobile, isOpen) => {
+		if (isMobile && isOpen) {
+			return <div className="nav-overlay" onClick={close} />;
+		}
 		return;
 	};
 
 	return (
-		<nav className={`side-nav ${width(entered)}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-			<Link className="menu-item" to={'/'}>
-				<div className="nav-logo-container">
-					<img id="nav-logo" src={CRELogoS} alt="logo" />
+		<React.Fragment>
+			{overlay(isMobile, isOpen)}
+			<nav className={`side-nav ${width(isOpen, isMobile)}`} onMouseEnter={open} onMouseLeave={close}>
+				<Link className="menu-item" to={'/'}>
+					<div className="nav-logo-container">
+						<img id="nav-logo" src={CRELogoS} alt="logo" />
+					</div>
+				</Link>
+				<div className="menu">
+					{menu.map((option, idx) => {
+						return (
+							<MenuItem key={idx} icon={option.icon} text={option.text} link={option.link} open={open} />
+						);
+					})}
 				</div>
-			</Link>
-			<div className="menu">
-				{menu.map((option, idx) => {
-					return (
-						<MenuItem
-							key={idx}
-							icon={option.icon}
-							text={option.text}
-							link={option.link}
-							entered={entered}
-						/>
-					);
-				})}
-			</div>
-		</nav>
-
-		//test long
-		// <nav className={`side-nav long`}>
-		// <Link className="menu-item" to={'/'}>
-		// 	<div className="nav-logo-container">
-		// 		<img id="nav-logo" src={CRELogoS} alt="logo" />
-		// 	</div>
-		// 	</Link>
-		// 	<div className="menu">
-		// 		{menu.map((option, idx) => {
-		// 			return (
-		//                 <MenuItem key={idx} icon={option.icon} text={option.text} link={option.link} entered={true}/>
-		// 			);
-		// 		})}
-		// 	</div>
-		// </nav>
-
-		// //test short
-		// <nav className={`side-nav short`}>
-		// <Link className="menu-item" to={'/'}>
-		// 	<div className="nav-logo-container">
-		// 		<img id="nav-logo" src={CRELogoS} alt="logo" />
-		// 	</div>
-		// 	</Link>
-		// 	<div className="menu">
-		// 		{menu.map((option, idx) => {
-		// 			return (
-		//                 <MenuItem key={idx} icon={option.icon} text={option.text} link={option.link} entered={false}/>
-		// 			);
-		// 		})}
-		// 	</div>
-		// </nav>
+			</nav>
+		</React.Fragment>
 	);
 };
 
@@ -106,4 +72,14 @@ const menu = [
 	}
 ];
 
-export default Nav;
+const sToP = (state) => ({
+	isMobile: state.manageMobileNav.isMobile,
+	isOpen: state.manageMobileNav.open
+});
+
+const dToP = (dispatch) => ({
+	open: () => dispatch({ type: 'OPEN', payload: true }),
+	close: () => dispatch({ type: 'OPEN', payload: false })
+});
+
+export default connect(sToP, dToP)(Nav);

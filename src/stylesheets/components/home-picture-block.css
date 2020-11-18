@@ -62,4 +62,12 @@
   max-width: 100%;
   white-space: pre-line; }
 
+@media (max-width: 800px) {
+  .block-container {
+    display: flex;
+    flex-direction: column; }
+
+  .home-block {
+    max-width: 100%; } }
+
 /*# sourceMappingURL=home-picture-block.css.map */

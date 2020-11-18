@@ -21,6 +21,14 @@ const Team = (props) => {
 		return;
 	};
 
+	const highlight = ind => {
+		console.log("highlight ind", ind);
+		console.log("highlight selected", selected);
+		if (selected == ind) {
+			return 'highlight'
+		};
+	};
+
 	return (
 		<div className="team">
 			<Header title="TEAM" parent={'team'} />
@@ -52,7 +60,7 @@ const Team = (props) => {
 					<div className="team-pictures content">
 						{list.map((ind, idx) => {
 							return (
-								<div className="img-wrap" onClick={() => onClick(ind)} key={idx}>
+								<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
 									<img src={ind.src} alt={ind.name} />
 								</div>
 							);

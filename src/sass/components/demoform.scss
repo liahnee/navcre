@@ -84,9 +84,18 @@ input.form-control:focus {
 }
 
 
+//large screen
 @media (min-width: 1400px) {
     .demoform {
          min-width: 1200px;
          max-width: 1200px;
+     }
+ }
+
+ //mobile 
+ @media (max-width: 800px) {
+     .row {
+         display: flex;
+         flex-direction: column;
      }
  }

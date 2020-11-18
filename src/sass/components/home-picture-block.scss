@@ -81,3 +81,15 @@ $white-color: rgb(230, 220, 220);
     max-width: 100%;
     white-space: pre-line;
 }
+
+//mobile
+
+@media(max-width: 800px) {
+    .block-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .home-block {
+        max-width: 100%;
+    }
+}

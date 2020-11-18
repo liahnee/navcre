@@ -14,7 +14,7 @@ const Contact = (props) => {
 			<div className="contact-top content">
 				<div id="t-1">
 					<img src={Logo} alt="Navigator CRE logo" />
-					<p>Looking to get in touch with us?</p>
+					<p id="f-1">Looking to get in touch with us?</p>
 					<p>
 						Call us, email us or chat with us regarding your future with NavigatorCRE. ​We are here to serve
 						you and look forward to speaking with you.

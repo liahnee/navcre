@@ -20,6 +20,9 @@
 .side-nav.short {
   min-width: 100px; }
 
+.side-nav.closed {
+  display: none; }
+
 .nav-logo-container {
   width: 100%;
   margin: 10px 0 10px 0;
@@ -85,8 +88,13 @@
     color: white;
     min-width: auto; }
 
-@media (max-width: 800px) {
-  .side-nav {
-    display: none; } }
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.521); }
 
 /*# sourceMappingURL=nav.css.map */

@@ -32,12 +32,21 @@ $grey-color: rgb(39, 39, 39);
 
 #t-1 {
   width: 70%; 
-  padding-right: 10% 
+  padding-right: 10%;
+
+  #f-1 {
+      padding-top: 0.5em;
+      font-size: 1.8em;
+      font-weight: bold;
+  }
 }
 
 #map {
     width: 70%;
     padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .addresses {
     display: flex;
@@ -56,5 +65,34 @@ $grey-color: rgb(39, 39, 39);
         height: 100%;
         width: 100%;
         background-color: rgba(11, 24, 15, 0.815);
+    }
+}
+
+
+//mobile
+
+@media(max-width: 800px) {
+    .contact-top, .contact-bottom {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+
+    }
+    #t-1 {
+        width: 100%;
+        padding: 0;
+        & img {
+            width: 40vw;
+        }
+    }
+    #map {
+        padding: 5px;
+        margin-bottom: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .addresses, .t-2 {
+        width: fit-content;
     }
 }

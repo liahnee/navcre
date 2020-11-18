@@ -1,9 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import '../../stylesheets/components/profeature-block.css';
 
 import Stars from '../stars';
 
 const Block = (props) => {
+	const { isMobile } = props; 
 	const content = (texts, title) => {
 		return (
 			<div className="block-texts-container">
@@ -22,11 +24,13 @@ const Block = (props) => {
 
 	const direction = (props) => {
 		const { img, imgDir, title, texts } = props;
+
 		if (imgDir == 'right') {
 			return (
 				<div className={`content block`}>
+					{isMobile ? <img src={img} /> : null }
 					{content(texts, title)}
-					<img src={img} />
+					{!isMobile ? <img src={img} /> : null }
 				</div>
 			);
 		} else if (imgDir == 'left') {
@@ -47,4 +51,8 @@ const Block = (props) => {
 	return <section className={`profeature-block ${props.imgDir}`}>{direction(props)}</section>;
 };
 
-export default Block;
+const sToP = state => ({
+	isMobile: state.manageMobileNav.isMobile
+})
+
+export default connect(sToP)(Block);

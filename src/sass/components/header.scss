@@ -22,6 +22,7 @@ $contact-color: rgba(42, 97, 26, 0.356);
     background-image: url('../../assets/header_bg_1.jpg');
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
     & h1 {
         font-size: 8vh;
         position: relative;
@@ -53,4 +54,3 @@ $contact-color: rgba(42, 97, 26, 0.356);
     backdrop-filter: grayscale(80%);
     z-index: 1;
 }
-

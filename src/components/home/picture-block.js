@@ -5,7 +5,6 @@ const Block = (props) => {
 	const [ vis, setVis ] = useState(false);
 
 	const onHover = () => {
-		console.log('hovering!!!!');
 		setVis(true);
 	};
 

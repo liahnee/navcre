@@ -30,6 +30,7 @@ $grey-color: rgb(39, 39, 39);
 
 #crelogo {
     padding-top: 2rem;
+    max-width: 100%;
 }
 
 .strip-box{
@@ -132,4 +133,17 @@ $grey-color: rgb(39, 39, 39);
     width: 100%;
     background-color: rgba(39, 39, 39, 0.8);
     z-index: 3;
+}
+
+//mobile 
+
+@media(max-width: 800px) {
+    .block-container {
+        display: flex;
+        flex-direction:column;
+    }
+    .home-block {
+        width: 100%;
+    }
+    
 }

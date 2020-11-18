@@ -76,9 +76,30 @@ $label-color: #08b49d;
     // outline: ridge 2px $label-color;
 }
 
+//mobile
+
 @media(max-width: 800px) {
-    .column-2 {
+    .platform {
+        & h2 {
+            font-size: 1.2em;
+        }
+        & .column-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+    .platform-products-1, .products-img-wrap {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .products-img {
+        max-width: 80%;
+    }
+    .nav-arch-img {
+        max-width: 100%;
     }
 }
+

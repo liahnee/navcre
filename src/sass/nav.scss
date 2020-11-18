@@ -15,14 +15,16 @@
     font-size: 1.2em;
 }
 
-// lengthen nav width on entere
-
 .side-nav.long {
     min-width: 250px;
 }
 
 .side-nav.short {
     min-width: 100px;
+}
+
+.side-nav.closed {
+    display: none;
 }
 
 // logo 
@@ -109,10 +111,15 @@
         min-width: auto;
     }
 }
-//mobile
-@media(max-width: 800px) {
 
-    .side-nav{
-        display: none;
-    }
+//mobile overlay for closing
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.521);
 }

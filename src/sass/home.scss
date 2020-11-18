@@ -145,5 +145,24 @@ $grey-color: rgb(39, 39, 39);
     .home-block {
         width: 100%;
     }
-    
+ 
+    .strip-box {
+        text-align: left;
+        bottom: -6em;
+        left: 10vw;
+        width: 80vw;
+        font-size: 0.8em;
+    }
+    .builtfor-title-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .builtfor-title {
+        font-size: 1.8em;
+    }
+    #builtfor-p {
+        padding-top: 1rem;
+        font-size: 1em;
+        margin: 0;
+    }
 }

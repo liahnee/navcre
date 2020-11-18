@@ -35,7 +35,7 @@ const Nav = (props) => {
 				<div className="menu">
 					{menu.map((option, idx) => {
 						return (
-							<MenuItem key={idx} icon={option.icon} text={option.text} link={option.link} open={open} />
+							<MenuItem key={idx} icon={option.icon} text={option.text} link={option.link} open={open} close={close} />
 						);
 					})}
 				</div>

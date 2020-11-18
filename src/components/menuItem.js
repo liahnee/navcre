@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MenuItem = (props) => {
-	const { link, icon, open, text } = props;
+	const { link, icon, open, close, text } = props;
 	const showText = (entered) => {
 		return entered ? 'long' : 'short';
 	};
 
 	return (
-		<Link to={link}>
+		<Link to={link} onClick={close}>
 			<div className={`menu-item ${showText(open)}`}>
 				<div className="menu-icon">
 					<i className={icon} />
@@ -18,5 +18,6 @@ const MenuItem = (props) => {
 		</Link>
 	);
 };
+
 
 export default MenuItem;

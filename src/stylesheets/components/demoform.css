@@ -72,6 +72,9 @@ input.form-control:focus {
     min-width: 1200px;
     max-width: 1200px; } }
 @media (max-width: 800px) {
+  .demoform.content {
+    padding-top: 5rem; }
+
   .row {
     display: flex;
     flex-direction: column; } }

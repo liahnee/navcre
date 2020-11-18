@@ -7,8 +7,21 @@ const MenuItem = (props) => {
 		return entered ? 'long' : 'short';
 	};
 
+	const scrollTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+		return;
+	};
+	const onClick = () =>{
+		scrollTop();
+		close();
+		return;
+	};
+
 	return (
-		<Link to={link} onClick={close}>
+		<Link to={link} onClick={onClick}>
 			<div className={`menu-item ${showText(open)}`}>
 				<div className="menu-icon">
 					<i className={icon} />
@@ -18,6 +31,5 @@ const MenuItem = (props) => {
 		</Link>
 	);
 };
-
 
 export default MenuItem;

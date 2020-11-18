@@ -54,6 +54,9 @@
     display: flex;
     flex-direction: column; }
 
+  .contact-top {
+    padding-top: 4rem; }
+
   #t-1 {
     width: 100%;
     padding: 0; }

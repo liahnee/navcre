@@ -75,7 +75,9 @@ $grey-color: rgb(39, 39, 39);
     .contact-top, .contact-bottom {
         display: flex;
         flex-direction: column;
-
+    }
+    .contact-top {
+        padding-top: 4rem;
     }
     #t-1 {
         width: 100%;

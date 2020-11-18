@@ -94,6 +94,10 @@ input.form-control:focus {
 
  //mobile 
  @media (max-width: 800px) {
+    .demoform.content {
+        padding-top: 5rem;
+    }
+
      .row {
          display: flex;
          flex-direction: column;

@@ -60,6 +60,9 @@
 @media (max-width: 800px) {
   .block {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .block-wrapper {
+    padding: 0; } }
 
 /*# sourceMappingURL=profeature-block.css.map */

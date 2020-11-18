@@ -63,7 +63,8 @@
 @media (max-width: 800px) {
   .platform .column-2 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 4rem; }
 
   #platform-desc h2 {
     font-size: 1.4em; }

@@ -112,6 +112,12 @@
   .home-block {
     width: 100%; }
 
+  .strip {
+    margin-top: 15vh;
+    padding: 5vw 5vw 5vw 15vw; }
+    .strip #crelogo {
+      padding-top: 1rem; }
+
   .strip-box {
     text-align: left;
     bottom: -6em;
@@ -120,10 +126,12 @@
     font-size: 0.8em; }
 
   .builtfor-title-wrap {
+    margin-top: 0;
     display: flex;
     flex-direction: column; }
 
   .builtfor-title {
+    margin-top: 1em;
     font-size: 1.6em; }
 
   #builtfor-p {

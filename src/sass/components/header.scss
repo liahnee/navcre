@@ -54,3 +54,15 @@ $contact-color: rgba(42, 97, 26, 0.356);
     backdrop-filter: grayscale(80%);
     z-index: 1;
 }
+
+@media(max-width: 800px) {
+    .header {
+        height: 20vh;
+        background-position: center;
+        & h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+}

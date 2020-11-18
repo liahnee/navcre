@@ -61,11 +61,12 @@
   color: #08b49d; }
 
 @media (max-width: 800px) {
-  .platform h2 {
-    font-size: 1.2em; }
   .platform .column-2 {
     display: flex;
     flex-direction: column; }
+
+  #platform-desc h2 {
+    font-size: 1.4em; }
 
   #platform-products-1, .products-img-wrap {
     display: flex;

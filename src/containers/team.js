@@ -34,7 +34,7 @@ const Team = (props) => {
 			<Header title="TEAM" parent={'team'} />
 			<div className="team-intro content">
 				<img src={Group} />
-				<div>
+				<div className="m-p-1">
 					<p>
 						NavigatorCRE founders are leading experts in commercial real estate investment strategy focused
 						on aligning successful teams for the benefit of their clients. Their mission to deliver

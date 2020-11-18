@@ -6,6 +6,7 @@ $label-color: #08b49d;
 }
 
 .platform {
+    position: relative;
     background-color: $grey-color;
     & .column-2 {
         display: grid;
@@ -80,17 +81,19 @@ $label-color: #08b49d;
 
 @media(max-width: 800px) {
     .platform {
-        & h2 {
-            font-size: 1.2em;
-        }
         & .column-2 {
             display: flex;
             flex-direction: column;
         }
-
     }
-    .platform-products-1, .products-img-wrap {
+    #platform-desc {
+        & h2 {
+            font-size: 1.4em;
+        }
+    }
+    #platform-products-1, .products-img-wrap {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -98,8 +101,13 @@ $label-color: #08b49d;
     .products-img {
         max-width: 80%;
     }
-    .nav-arch-img {
+    #nav-arch-img {
         max-width: 100%;
+    }
+    #platform-products-2 {
+        & .products-label {
+            font-size: 1.4em;
+        }
     }
 }
 

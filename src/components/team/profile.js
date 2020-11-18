@@ -14,7 +14,7 @@ const Profile = (props) => {
 			</div>
 			<div>
 				<p className="profile-title">{title}</p>
-				<p>{text}</p>
+				<p className="m-p-1">{text}</p>
 			</div>
 		</div>
 	);

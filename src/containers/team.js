@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import '../stylesheets/team.css';
 
 import Header from '../components/header';
 import Profile from '../components/team/profile';
-import Slider from '../components/slider';
 
 import Stars from '../components/stars';
 
@@ -15,6 +15,7 @@ import RJ from '../assets/team/russ.png';
 import LJ from '../assets/team/larry2.png';
 
 const Team = (props) => {
+	const { isMobile } = props;
 	const [ selected, setSelected ] = useState(list[0]);
 
 	const onClick = (prop) => {
@@ -53,7 +54,7 @@ const Team = (props) => {
 				</div>
 			</div>
 			<div className="team-exect">
-				{/* <Stars /> */}
+				<Stars />
 				<div className="team-title content">
 					<div>
 						<img src={Logo} alt="Navigator CRE logo" />
@@ -61,22 +62,40 @@ const Team = (props) => {
 					<h2>EXECUTIVE TEAM</h2>
 				</div>
 				<div className="team-pictures content">
-					<Slider onClick={onClick} highlight={highlight} list={list}/>
-					{/* {list.map((ind, idx) => {
-						return (
-							<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
-								<img src={ind.src} alt={ind.name} />
+					{isMobile ? (
+						<React.Fragment>
+							<div>
+								<div className={`img-wrap ${highlight(list[0])}`} onClick={() => onClick(list[0])}>
+									<img src={list[0].src} alt={list[0].name} />
+								</div>
+								<div className={`img-wrap ${highlight(list[1])}`} onClick={() => onClick(list[1])}>
+									<img src={list[1].src} alt={list[1].name} />
+								</div>
 							</div>
-						);
-					})} */}
+							<div>
+								<div className={`img-wrap ${highlight(list[2])}`} onClick={() => onClick(list[2])}>
+									<img src={list[2].src} alt={list[2].name} />
+								</div>
+								<div className={`img-wrap ${highlight(list[3])}`} onClick={() => onClick(list[3])}>
+									<img src={list[3].src} alt={list[3].name} />
+								</div>
+							</div>
+						</React.Fragment>
+					) : (
+						list.map((ind, idx) => {
+							return (
+								<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
+									<img src={ind.src} alt={ind.name} />
+								</div>
+							);
+						})
+					)};
 				</div>
 				<Profile ind={selected} />
 			</div>
 		</div>
 	);
 };
-const handleDragStart = (e) => e.preventDefault();
-
 const list = [
 	{
 		src: TO,
@@ -120,7 +139,11 @@ const list = [
 	}
 ];
 
-export default Team;
+const sToP = (state) => ({
+	isMobile: state.manageMobileNav.isMobile
+});
+
+export default connect(sToP)(Team);
 
 // hover image to show prev texts on bottom column
 // click to fixate

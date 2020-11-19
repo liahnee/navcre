@@ -43,7 +43,7 @@
   margin-bottom: 3rem;
   max-width: 15vw;
   max-height: 15vw;
-  box-shadow: 2px 2px 5px 2px #374274; }
+  border: solid 2px transparent; }
   .img-wrap img {
     width: 100%; }
 

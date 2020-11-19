@@ -63,6 +63,9 @@
     flex-direction: column; }
 
   .block-wrapper {
-    padding: 0; } }
+    padding: 0; }
+
+  .block img {
+    max-height: 20vh; } }
 
 /*# sourceMappingURL=profeature-block.css.map */

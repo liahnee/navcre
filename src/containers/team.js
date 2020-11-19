@@ -3,6 +3,7 @@ import '../stylesheets/team.css';
 
 import Header from '../components/header';
 import Profile from '../components/team/profile';
+import Slider from '../components/slider';
 
 import Stars from '../components/stars';
 
@@ -22,10 +23,10 @@ const Team = (props) => {
 	};
 
 	const highlight = (ind) => {
-		console.log('highlight ind', ind);
-		console.log('highlight selected', selected);
 		if (selected == ind) {
 			return 'highlight';
+		} else {
+			return '';
 		}
 	};
 
@@ -52,19 +53,22 @@ const Team = (props) => {
 				</div>
 			</div>
 			<div className="team-exect">
-				<Stars />
+				{/* <Stars /> */}
 				<div className="team-title content">
-					<img src={Logo} alt="Navigator CRE logo" />
+					<div>
+						<img src={Logo} alt="Navigator CRE logo" />
+					</div>
 					<h2>EXECUTIVE TEAM</h2>
 				</div>
 				<div className="team-pictures content">
-					{list.map((ind, idx) => {
+					<Slider onClick={onClick} highlight={highlight} list={list}/>
+					{/* {list.map((ind, idx) => {
 						return (
 							<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
 								<img src={ind.src} alt={ind.name} />
 							</div>
 						);
-					})}
+					})} */}
 				</div>
 				<Profile ind={selected} />
 			</div>

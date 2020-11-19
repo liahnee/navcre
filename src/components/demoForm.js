@@ -14,7 +14,7 @@ const DemoForm = (props) => {
 				<img src={Logo} alt="logo" />
 			</div>
 			<p className="description">
-				<span className="red">*</span> INDICATES REQUIRED FIELD{' '}
+				<span className="red">*</span> INDICATES REQUIRED FIELD
 			</p>
 			<form className="form-container">
 				<div className="row">

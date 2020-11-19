@@ -68,6 +68,18 @@
     flex-direction: column; }
 
   .home-block {
-    max-width: 100%; } }
+    max-width: 100%;
+    min-height: 18rem; }
+    .home-block img {
+      max-height: 100%;
+      max-width: none; }
+
+  .block-overlay label {
+    width: 100%; }
+
+  .block-title {
+    margin: 0;
+    text-align: left;
+    width: 100%; } }
 
 /*# sourceMappingURL=home-picture-block.css.map */

@@ -21,7 +21,8 @@ a:hover {
   display: grid;
   grid-template-columns: auto 100px;
   grid-template-areas: "c n" "f n";
-  font-family: 'Questrial', sans-serif; }
+  font-family: 'Questrial', sans-serif;
+  box-sizing: border-box; }
 
 .routes {
   grid-area: c; }

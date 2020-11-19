@@ -89,7 +89,7 @@ const Team = (props) => {
 								</div>
 							);
 						})
-					)};
+					)}
 				</div>
 				<Profile ind={selected} />
 			</div>

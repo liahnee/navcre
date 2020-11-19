@@ -12,7 +12,7 @@
   justify-content: center; }
   .block img {
     max-width: 100%;
-    max-height: 20em; }
+    max-height: 16vw; }
 
 .left {
   color: white; }
@@ -63,9 +63,6 @@
     flex-direction: column; }
 
   .block-wrapper {
-    padding: 0; }
-
-  .block img {
-    max-width: 16vw; } }
+    padding: 0; } }
 
 /*# sourceMappingURL=profeature-block.css.map */

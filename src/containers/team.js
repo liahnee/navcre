@@ -21,12 +21,12 @@ const Team = (props) => {
 		return;
 	};
 
-	const highlight = ind => {
-		console.log("highlight ind", ind);
-		console.log("highlight selected", selected);
+	const highlight = (ind) => {
+		console.log('highlight ind', ind);
+		console.log('highlight selected', selected);
 		if (selected == ind) {
-			return 'highlight'
-		};
+			return 'highlight';
+		}
 	};
 
 	return (
@@ -52,25 +52,26 @@ const Team = (props) => {
 				</div>
 			</div>
 			<div className="team-exect">
-					<Stars />
-					<div className="team-title content">
-						<img src={Logo} alt="Navigator CRE logo" />
-						<h2>EXECUTIVE TEAM</h2>
-					</div>
-					<div className="team-pictures content">
-						{list.map((ind, idx) => {
-							return (
-								<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
-									<img src={ind.src} alt={ind.name} />
-								</div>
-							);
-						})}
-					</div>
-					<Profile ind={selected} />
+				<Stars />
+				<div className="team-title content">
+					<img src={Logo} alt="Navigator CRE logo" />
+					<h2>EXECUTIVE TEAM</h2>
+				</div>
+				<div className="team-pictures content">
+					{list.map((ind, idx) => {
+						return (
+							<div className={`img-wrap ${highlight(ind)}`} onClick={() => onClick(ind)} key={idx}>
+								<img src={ind.src} alt={ind.name} />
+							</div>
+						);
+					})}
+				</div>
+				<Profile ind={selected} />
 			</div>
 		</div>
 	);
 };
+const handleDragStart = (e) => e.preventDefault();
 
 const list = [
 	{

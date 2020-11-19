@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# NavigatorCRE Code Challenge
+## **[Live App](https://navcre-code-challenge.netlify.app/)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Code Challenge Prompt
+Revamp/redesign the Navigator website with a clear theme and value proposition that meets accessibility standards and is mobile/desktop responsive displaying useful UI/UX trends
 
-## Available Scripts
+Requirements:
 
-In the project directory, you can run:
+- 1 home page, minimum 4 additional pages
+- Menu
+- 3 features (minimum) your choic
+    - Ex. Floating action button, hamburger menu, animated elements (sliding up, hover, etc), words à icons (vice versa)
+- Contact/inquiry for
 
-### `yarn start`
+- - - -
+## App info
+* Built with ReactJS and create-react-app(CRA)
+* Sass was used for writing CSS
+- - - -
+## How to run the app 
+1. git clone repo
+2. npm install
+3. npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Dependencies:  React: ^17.0.1
+- - - -
+## Codes
+### Components and Containers   
+The app components are organized into common components and container components. Some example of the common components are header, dropdown, and demo form. Specific components cuch as profile for team page are located under team directory. Container components are each of the pages, header, footer, and nav.
+### Routes    
+The app has five pages '/home,' '/platform,' '/profeatures,' '/team,' and '/contact.' Each route is connected to according component with react-router-dom. 
+### State  
+React Redux and React Hook(useState) were used for the state to be accessed throughout. 
+- - - -
+## UI/UX designs
+### Content and Images
+This mock web site is based on official NavigatorCRE website, where most of the images and all of the contents originate from. Background images were free images from other platforms. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Mobile Responsive Design
+* The elements respond to screen width and sizes   
+![mobile start page](readme-pictures/mobile_2.png "NavigatorCRE code challenge") 
+![mobile contact page](readme-pictures/mobile_3.png "NavigatorCRE code challenge") 
+![mobile side menu](readme-pictures/mobile_1.png "NavigatorCRE code challenge")
+### UX choices 
+* Thin side menu with icons
+    * Desktop nav bar is thin side bar with icons
+        * Page name appears next to the icon as it opens sideway when mouse enters the bar
+        * Nav bar closes when mouse leaves the bar
+    * Mobile app has button to open the side nav bar
+        * Nav bar closes as menu item has been clicked or outside of nav bar has been clicked
+* Page scrolls to the top as it renders ]
+### UI choices 
+* Since Navigator website is themed with NavigatorSRVS, I tried to theme similarly but distinctively as the prompt required redesign of the original
+![desktop start page](readme-pictures/start.png "NavigatorCRE code challenge")
+![desktop contact page](readme-pictures/contact.png "NavigatorCRE code challenge")
+* Themed header with same background and variation in colors
+* Each page has its own colored theme  
+![desktop pro features page](readme-pictures/theme_1.png "NavigatorCRE code challenge")
+![desktop platform page](readme-pictures/theme_2.png "NavigatorCRE code challenge")
+### Reviewed on
+* Mobile
+* Chrome
+* Safari
+    * webp file may not show on older Safari version
+* Firefox 
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- - - -

@@ -14,7 +14,7 @@ $label-color: rgb(163, 86, 207);
     justify-content: center;
     & img {
         max-width: 100%;
-        max-height: 20em;
+        max-height: 16vw;
     }
 }
 
@@ -87,7 +87,7 @@ $label-color: rgb(163, 86, 207);
 
     .block {
         & img {
-            max-width: 16vw;
+            max-height: 20vh;
         }
     }
 }

@@ -35,12 +35,6 @@ React Redux and React Hook(useState) were used for the state to be accessed thro
 ## UI/UX designs
 ### Content and Images
 This mock web site is based on official NavigatorCRE website, where most of the images and all of the contents originate from. Background images were free images from other platforms. 
-
-### Mobile Responsive Design
-* The elements respond to screen width and sizes   
-![mobile start page](readme-pictures/mobile_2.png "NavigatorCRE code challenge") 
-![mobile contact page](readme-pictures/mobile_3.png "NavigatorCRE code challenge") 
-![mobile side menu](readme-pictures/mobile_1.png "NavigatorCRE code challenge")
 ### UX choices 
 * Thin side menu with icons
     * Desktop nav bar is thin side bar with icons
@@ -57,6 +51,11 @@ This mock web site is based on official NavigatorCRE website, where most of the 
 * Each page has its own colored theme  
 ![desktop pro features page](readme-pictures/theme_1.png "NavigatorCRE code challenge")
 ![desktop platform page](readme-pictures/theme_2.png "NavigatorCRE code challenge")
+### Mobile Responsive Design
+* The elements respond to screen width and sizes   
+![mobile start page](readme-pictures/mobile_2.png "NavigatorCRE code challenge") 
+![mobile contact page](readme-pictures/mobile_3.png "NavigatorCRE code challenge") 
+![mobile side menu](readme-pictures/mobile_1.png "NavigatorCRE code challenge")
 ### Reviewed on
 * Mobile
 * Chrome

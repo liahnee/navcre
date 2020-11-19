@@ -24,7 +24,7 @@ $grey-color: rgb(39, 39, 39);
     width: 100%;
     height: 22rem;
     background-color:rgba(0, 0, 0, 0.753);
-    padding: 5rem 5rem 5rem 15vw;
+    padding: 5rem 5rem 15vw 5rem;
     color: white;
 }
 
@@ -106,7 +106,8 @@ $grey-color: rgb(39, 39, 39);
 #builtfor-p {
     font-size: 2rem;
     width: 100%;
-    margin: 2rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
     text-align: center;
     font-family: 'Sarala', sans-serif;;
 }
@@ -135,6 +136,13 @@ $grey-color: rgb(39, 39, 39);
     z-index: 3;
 }
 
+// short height/ tablet 
+@media(max-height: 600px) {
+    .strip {
+        margin-top:15vh;
+    }
+} 
+
 //mobile 
 
 @media(max-width: 800px) {
@@ -147,7 +155,7 @@ $grey-color: rgb(39, 39, 39);
     }
     .strip {
         margin-top: 20vh !important;
-        padding: 5vw 5vw 5vw 15vw;
+        padding: 5vw 5vw 15vw 5vw;
         #crelogo {
             padding-top: 1rem;
         }

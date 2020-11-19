@@ -1,6 +1,9 @@
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover, label:hover, ul, li {
   cursor: default; }
 
+img {
+  max-width: 100%; }
+
 a {
   color: white;
   cursor: pointer; }
@@ -17,7 +20,8 @@ a:hover {
   position: relative;
   display: grid;
   grid-template-columns: auto 100px;
-  grid-template-areas: "c n" "f n"; }
+  grid-template-areas: "c n" "f n";
+  font-family: 'Questrial', sans-serif; }
 
 .routes {
   grid-area: c; }

@@ -56,7 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     width: 100%;
     transition: color 0.5s ease-in-out, min-width 0.5s ease;
 }
@@ -65,6 +64,10 @@
     position: absolute;
     top: auto;
     left: 37px;
+}
+
+.menu-text-container {
+    height: 100px;
 }
 
 .menu-item-text {
@@ -109,6 +112,14 @@
         margin-left: 100px;
         color: white;
         min-width: auto;
+    }
+}
+
+//short browser 
+
+@media(max-height: 600px) {
+    .menu-text-container {
+        height: 3rem;
     }
 }
 

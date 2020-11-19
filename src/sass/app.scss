@@ -4,6 +4,10 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, p:hover,
     cursor: default;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     color: white;
     cursor: pointer;
@@ -24,6 +28,7 @@ a:hover {
     grid-template-areas: 
     "c n"
     "f n";
+    font-family: 'Questrial', sans-serif;
 }
 
 

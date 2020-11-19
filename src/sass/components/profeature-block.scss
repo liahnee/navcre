@@ -4,7 +4,7 @@ $label-color: rgb(163, 86, 207);
     position: relative;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Questrial', sans-serif;
 }
 .block {
     display: grid;
@@ -83,5 +83,11 @@ $label-color: rgb(163, 86, 207);
     }
     .block-wrapper {
         padding: 0;
+    }
+
+    .block {
+        & img {
+            max-width: 16vw;
+        }
     }
 }

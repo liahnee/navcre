@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: 'Chivo', sans-serif; }
+  font-family: 'Questrial', sans-serif; }
 
 .block {
   display: grid;
@@ -63,6 +63,9 @@
     flex-direction: column; }
 
   .block-wrapper {
-    padding: 0; } }
+    padding: 0; }
+
+  .block img {
+    max-width: 16vw; } }
 
 /*# sourceMappingURL=profeature-block.css.map */

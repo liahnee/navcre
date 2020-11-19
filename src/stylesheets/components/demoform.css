@@ -1,7 +1,8 @@
 .form-control {
   border-radius: 0%;
   background-color: transparent;
-  border-color: #dadada; }
+  border-color: #dadada;
+  color: white; }
 
 .col {
   padding-right: 5px;
@@ -15,7 +16,7 @@ input.form-control:focus {
   border: solid 2px black;
   outline: 0;
   box-shadow: none;
-  background-color: #fff7f6; }
+  background-color: rgba(255, 247, 246, 0.808); }
 
 .demoform {
   position: relative;

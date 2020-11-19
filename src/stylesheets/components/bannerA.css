@@ -97,8 +97,9 @@
 
   .bannerAB-icon {
     max-width: 90px;
-    margin-left: auto;
-    margin-right: auto; }
+    margin: 2rem auto 2rem auto;
+    object-fit: cover;
+    padding: 0; }
 
   .banner-AB-text {
     min-height: 10rem; }

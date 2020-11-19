@@ -22,7 +22,7 @@ const DemoForm = (props) => {
 					<TextInput required={true} name="lastname" label="LAST NAME" />
 				</div>
 				<div className="row">
-					<Dropdown name="job" label="TELL US ABOUT YOU" options={jobOptions} />
+					<Dropdown name="job" label="TELL US ABOUT YOU" options={jobOptions} optground="Select"/>
 					<TextInput required={true} name="email" label="EMAIL" />
 					<TextInput name="phone" label="PHONE NUMBER" />
 				</div>
@@ -39,6 +39,7 @@ const DemoForm = (props) => {
 };
 
 const jobOptions = [
+	'Select',
 	'Broker',
 	'Manager',
 	'Investor',

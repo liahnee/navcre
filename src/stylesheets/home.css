@@ -14,7 +14,7 @@
   width: 100%;
   height: 22rem;
   background-color: rgba(0, 0, 0, 0.753);
-  padding: 5rem 5rem 5rem 15vw;
+  padding: 5rem 5rem 15vw 5rem;
   color: white; }
 
 #crelogo {
@@ -82,7 +82,8 @@
 #builtfor-p {
   font-size: 2rem;
   width: 100%;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: 'Sarala', sans-serif; }
 
@@ -104,6 +105,9 @@
   background-color: rgba(39, 39, 39, 0.8);
   z-index: 3; }
 
+@media (max-height: 600px) {
+  .strip {
+    margin-top: 15vh; } }
 @media (max-width: 800px) {
   .block-container {
     display: flex;
@@ -114,7 +118,7 @@
 
   .strip {
     margin-top: 20vh !important;
-    padding: 5vw 5vw 5vw 15vw; }
+    padding: 5vw 5vw 15vw 5vw; }
     .strip #crelogo {
       padding-top: 1rem; }
 

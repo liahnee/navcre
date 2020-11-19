@@ -80,10 +80,10 @@ $team-color: rgb(80, 90, 231);
 
 @media(max-width: 800px) {
     .team-intro {
-        display: flex;
         flex-direction: column;
         & img {
             max-height: 20vh;
+            margin-bottom: 2rem;
         }
     }
     .team-title {

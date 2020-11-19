@@ -26,7 +26,7 @@ const Nav = (props) => {
 	return (
 		<React.Fragment>
 			{overlay(isMobile, isOpen)}
-			<nav className={`side-nav ${width(isOpen, isMobile)}`} onMouseEnter={open} onMouseLeave={close}>
+			<nav className={`side-nav ${width(isOpen, isMobile)}`} onMouseLeave={close} onMouseEnter={open}>
 				<Link className="menu-item" to={'/'}>
 					<div className="nav-logo-container">
 						<img id="nav-logo" src={CRELogoS} alt="logo" />

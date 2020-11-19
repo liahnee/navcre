@@ -64,10 +64,10 @@
 
 @media (max-width: 800px) {
   .team-intro {
-    display: flex;
     flex-direction: column; }
     .team-intro img {
-      max-height: 20vh; }
+      max-height: 20vh;
+      margin-bottom: 2rem; }
 
   .team-title {
     width: 100%;
